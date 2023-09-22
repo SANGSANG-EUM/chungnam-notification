@@ -1,0 +1,7 @@
+/* Settings */
+:root {
+  --main-color: #;
+  --white-color: #fff;
+  --black-color: #000;
+  --mobile-height: calc(var(--var,1vh) * 100);
+}
