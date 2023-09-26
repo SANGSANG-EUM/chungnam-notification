@@ -19,7 +19,7 @@ select::-ms-expand {display: none;}
 /* guide line */
 .container {width: 100%; padding-left: 40px; padding-right: 40px;}
 .wrapper {width: 1400px; max-width: 100%; margin: 0 auto;}
-.wrapper2 {padding: 0 3vw; width: calc(1280px + 6vw); max-width: 100%; margin: 0 auto;}
+.wrapper2 {position: relative; padding: 0 3vw; width: calc(1280px + 6vw); max-width: 100%; margin: 0 auto; z-index: 10;}
 
 /* text cut */
 .text_row1{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}

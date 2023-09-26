@@ -33,6 +33,13 @@
   <link rel="stylesheet" href="/source/css/normal.css">
   <link rel="stylesheet" href="/source/css/responsive.css">
 
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
 </head>
 
 <body>
@@ -236,14 +243,14 @@
       <div class="tab-dep1-wr">
         <div class="wrapper2">
           <ul class="tab-dep1-ul">
-            <!-- 활성 카테고리 : active 클래스 -->
-            <li class="tab-dep1-li active">
+            <li class="tab-dep1-li">
               <a href="./index.html">관련소식</a>
             </li>
             <li class="tab-dep1-li">
               <a href="./measures.html">주요 방역조치</a>
             </li>
-            <li class="tab-dep1-li">
+            <!-- 활성 카테고리 : active 클래스 -->
+            <li class="tab-dep1-li active">
               <a href="./prevention.html">예방수칙</a>
             </li>
           </ul>
@@ -254,127 +261,60 @@
       <!-- 컨텐츠 영역 { -->
       <div class="content">
         <div class="wrapper2">
-          <!-- 텍스트 게시판 { -->
-          <div class="board">
-            <div class="board_top">
-              <div class="board_cnt_wrap">
-                <p class="board_cnt">총 <span>100</span></p>
-              </div>
-              <div class="board_srch_wrap">
-                <form action="">
-                  <div class="board_srch_bar">
-                    <select name="" id="">
-                      <option value="">전체</option>
-                      <option value="">제목</option>
-                      <option value="">담당부서</option>
-                    </select>
-                    <div class="board_srch_input_wrap">
-                      <input type="text" placeholder="내용을 입력하세요.">
-                      <button type="submit"><img src="/source/img/icon-srch.png" alt="검색하기"></button>
+          <div class="poster">
+            <div class="poster-wr">
+              <ul class="poster-tab-ul">
+                <li class="poster-tab-li active">
+                  <button type="button">구제역</button>
+                </li>
+                <li class="poster-tab-li">
+                  <button type="button">고병원성 AI</button>
+                </li>
+                <li class="poster-tab-li">
+                  <button type="button">ASF 바이러스</button>
+                </li>
+              </ul>
+              <div class="poster-box-wr">
+                <div class="poster-box poster-box--1 active">
+                  <div class="poster-box-title-wr">
+                    <p class="poster-title1">예방수칙</p>
+                    <p class="poster-title2">구제역</p>
+                  </div>
+                  <div class="poster-box-cnt-wr">
+                    <div class="poster-box-img">
+                      <img src="../source/img/poster1.jpg" alt="철저한 방역수칙준수만이 구제역, 고병원성 조류인플루엔자(AI)를 예방할 수 있습니다.">
+                    </div>
+                    <div class="poster-btn-wr poster-btn-wr--1">
+                      <a href="" class="poster-btn"><span>축산농가 방역수칙</span><img src="../source/img/down_ic.png"
+                          alt="다운로드"></a>
+                      <a href="" class="poster-btn"><span>수의사 동물보호소 관리자 등의 AI감염예방수칙</span><img
+                          src="../source/img/down_ic.png" alt="다운로드"></a>
                     </div>
                   </div>
-                </form>
-              </div>
-            </div>
-
-            <div class="board_contents">
-              <div class="list">
-                <!-- List Head { -->
-                <div class="list_head">
-                  <div class="th td_num">번호</div>
-                  <div class="th td_subj">제목</div>
-                  <div class="th td_depart">담당부서</div>
-                  <div class="th td_hits">조회</div>
-                  <div class="th td_file">첨부</div>
                 </div>
-                <!-- } List Head -->
-                <!-- List Body { -->
-                <div class="list_body">
-                  <!-- loop { -->
-                  <a href="" class="list_body_item">
-                    <div class="td td_num">99</div>
-                    <div class="td td_subj">
-                      <p class="td_date">2019.02.11</p>
-                      <p class="td_title text_row1">게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다.</p>
+                <div class="poster-box poster-box--2">
+                  <div class="poster-box-title-wr">
+                    <p class="poster-title1">예방수칙</p>
+                    <p class="poster-title2">고병원성 AI</p>
+                  </div>
+                  <div class="poster-box-cnt-wr">
+                    <div class="poster-box-img">
+                      고병원성 AI 관련 이미지가 들어갈 부분
                     </div>
-                    <div class="td td_depart">안면도개발팀</div>
-                    <div class="td td_hits">40</div>
-                    <div class="td td_file">
-                      <!-- 첨부 파일이 있을 떄 { -->
-                      <div class="icon td_file_icon">
-                        <img src="/source/img/icon-file.png" alt="첨부파일 있음">
-                      </div>
-                      <!-- } 첨부 파일이 있을 떄 -->
-                      <div class="icon td_baro_icon">
-                        <img src="/source/img/icon-baro.png" alt="바로가기">
-                      </div>
-                    </div>
-                  </a>
-                  <!-- } loop -->
-                  <a href="" class="list_body_item">
-                    <div class="td td_num">99</div>
-                    <div class="td td_subj">
-                      <p class="td_date">2019.02.11</p>
-                      <p class="td_title text_row1">게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다.</p>
-                    </div>
-                    <div class="td td_depart">안면도개발팀</div>
-                    <div class="td td_hits">40</div>
-                    <div class="td td_file">
-                      <!-- 첨부 파일이 있을 떄 { -->
-                      <div class="icon td_file_icon">
-                        <img src="/source/img/icon-file.png" alt="첨부파일 있음">
-                      </div>
-                      <!-- } 첨부 파일이 있을 떄 -->
-                      <div class="icon td_baro_icon">
-                        <img src="/source/img/icon-baro.png" alt="바로가기">
-                      </div>
-                    </div>
-                  </a>
-                  <a href="" class="list_body_item">
-                    <div class="td td_num">99</div>
-                    <div class="td td_subj">
-                      <p class="td_date">2019.02.11</p>
-                      <p class="td_title text_row1">게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다.</p>
-                    </div>
-                    <div class="td td_depart">안면도개발팀</div>
-                    <div class="td td_hits">40</div>
-                    <div class="td td_file">
-                      <div class="icon td_baro_icon">
-                        <img src="/source/img/icon-baro.png" alt="바로가기">
-                      </div>
-                    </div>
-                  </a>
-                  <a href="" class="list_body_item">
-                    <div class="td td_num">99</div>
-                    <div class="td td_subj">
-                      <p class="td_date">2019.02.11</p>
-                      <p class="td_title text_row1">게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다. 게시판 타이틀 영역입니다.</p>
-                    </div>
-                    <div class="td td_depart">안면도개발팀</div>
-                    <div class="td td_hits">40</div>
-                    <div class="td td_file">
-                      <div class="icon td_baro_icon">
-                        <img src="/source/img/icon-baro.png" alt="바로가기">
-                      </div>
-                    </div>
-                  </a>
+                  </div>
                 </div>
-                <!-- } List Body  -->
-              </div>
-              <div class="pagination">
-                <ul class="pagi_ul">
-                  <li><a href="" class="pg_prev"><img src="/source/img/pg-prev.png" alt="이전 페이지"></a></li>
-                  <li><a href="" class="pg_btn active">01</a></li>
-                  <li><a href="" class="pg_btn">02</a></li>
-                  <li><a href="" class="pg_btn">03</a></li>
-                  <li><a href="" class="pg_btn">04</a></li>
-                  <li><a href="" class="pg_btn">05</a></li>
-                  <li><a href="" class="pg_next"><img src="/source/img/pg-next.png" alt="다음 페이지"></a></li>
-                </ul>
+                <div class="poster-box poster-box--3">
+                  <div class="poster-box-title-wr">
+                    <p class="poster-title1">예방수칙</p>
+                    <p class="poster-title2">ASF 바이러스</p>
+                  </div>
+                  <div class="poster-box-img">
+                    ASF 바이러스 관련 이미지가 들어갈 부분
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <!-- } 텍스트 게시판 -->
         </div>
       </div>
       <!-- } 컨텐츠 영역 -->
