@@ -124,15 +124,16 @@ const mobileHeight = () => {
  * [푸터] 관련 사이트 슬라이드
  */
 const ftRelationSlide = () => {
+
   let ftSwiper = new Swiper('.foot-link-slider',{
     slidesPerView : 2, // 한 슬라이드에 보여줄 갯수
     spaceBetween: 10,
     loop : true,   // 슬라이드 반복 여부
     loopAdditionalSlides : 1,
-    autoplay: {     //자동슬라이드 (false-비활성화)
-      delay: 3000, // 시간 설정
-      disableOnInteraction: false, // false-스와이프 후 자동 재생
-    },
+    // autoplay: {     //자동슬라이드 (false-비활성화)
+    //   delay: 3000, // 시간 설정
+    //   disableOnInteraction: false, // false-스와이프 후 자동 재생
+    // },
     breakpoints: {
       400: {
         slidesPerView : 3,
@@ -143,7 +144,7 @@ const ftRelationSlide = () => {
         spaceBetween: 20,
       },
       1023: {
-        slidesPerView : 5,
+        slidesPerView : 4,
         spaceBetween: 20,
       },
     },
