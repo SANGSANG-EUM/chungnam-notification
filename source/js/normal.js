@@ -215,6 +215,11 @@ const tabDep1 = () => {
   });
 }
 
+// Print
+function printPage(){
+	window.print();
+}
+
 // document ready
 $(document).ready(function(){
   ftRelationSlide();

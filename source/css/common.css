@@ -26,6 +26,35 @@ select::-ms-expand {display: none;}
 .text_row2{white-space: normal; overflow: hidden; line-height: 1.5; max-height: 3em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 .text_row3{white-space: normal; overflow: hidden; line-height: 1.2; max-height: 3.6em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
 
+/* cut text */
+.cut_text{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-break: break-all;
+}
+.cut_text2{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+}
+.cut_text3{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+}
+
 /* sound only */
 .sound_only{display: inline-block !important; position: absolute; top: 0; left: 0; width: 0; height: 0; margin: 0 !important; padding: 0 !important; font-size: 0; line-height: 0; border: 0 !important; overflow: hidden !important;}
 
