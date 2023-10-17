@@ -76,11 +76,14 @@
 .poster-title1 {font-weight: 700; color: #bbb;}
 .poster-title2 {padding-top: 15px; font-size: 2.5rem; font-weight: 700; color: #0f0f0f; line-height: 1.25;}
 .poster-box-cnt-wr {position: relative;}
-.poster-btn-wr {display: flex; gap: 0 20px; position: absolute; left: 50%; transform: translateX(-50%); bottom: 30px; width: calc(100% - 120px);}
-.poster-btn {display: flex; align-items: center; justify-content: center; gap: 0 20px; padding: 0 20px; height: 60px; border-radius: 25px; flex: 1; font-size: 1.25rem; font-weight: 600; color: #fff; text-shadow: 0 3px 5px rgba(0, 0, 0, .1);}
+.poster-box-img img {width: 100%;}
+.poster-btn-wr {display: flex; justify-content: center; gap: 0 20px; width: calc(100% - 120px); margin: 30px auto 0;}
+.poster-box--1 .poster-btn-wr {position: absolute; left: 50%; transform: translateX(-50%); top: 10.9%; margin: 0 auto;}
+.poster-box--2 .poster-btn-wr {position: absolute; left: 50%; transform: translateX(-50%); top: 80%; margin: 0 auto;}
+.poster-btn {display: flex; align-items: center; justify-content: center; gap: 0 20px; width: 500px; max-width: 50%; padding: 0 20px; height: 80px; border-radius: 8px; font-size: 1.25rem; font-weight: 600; color: #fff; text-shadow: 0 3px 5px rgba(0, 0, 0, .1);}
 .poster-btn span {word-break: break-;}
-.poster-btn-wr--1 .poster-btn:first-child {background-color: #f89e00;}
-.poster-btn-wr--1 .poster-btn:last-child {background-color: #e25d00;}
+.poster-btn-wr--1 .poster-btn:nth-child(1) {background-color: #f89e00;}
+.poster-btn-wr--1 .poster-btn:nth-child(2) {background-color: #e25d00;}
 
 /* 주요 방역조치 게시판 카테고리 */
 .board-cate-ul {display: flex; width: min(100%, 720px); margin: 0 auto clamp(20px, 5vw, 55px);}
